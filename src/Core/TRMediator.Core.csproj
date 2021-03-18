@@ -1,7 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Title>TRMediator</Title>
+    <Authors>tiagor87@gmail.com</Authors>
+    <Description>A very simple and abstract driven mediator.</Description>
+    <ProjectGuid>{485ACA94-3B54-466E-B6E9-B2B38D871EAE}</ProjectGuid>
   </PropertyGroup>
 
 </Project>

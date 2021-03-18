@@ -4,7 +4,7 @@ namespace TRMediator.Core.Abstractions
     {
     }
     
-    public interface ICommand<TResponse>
+    public interface ICommand<out TResponse>
     {
     }
 }

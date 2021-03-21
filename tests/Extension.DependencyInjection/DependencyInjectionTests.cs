@@ -38,5 +38,12 @@ namespace TRMediator.Extensions.DependencyInjection.Tests
             var handler = _provider.GetService<ICommandHandler<ITestCommandEvent, bool>>();
             handler.Should().NotBeNull();
         }
+        
+        [Fact]
+        public void GivenProviderWhenGetMediatorShouldReturnInstance()
+        {
+            var mediator = _provider.GetService<IMediator>();
+            mediator.Should().NotBeNull();
+        }
     }
 }

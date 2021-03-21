@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
+using TRMediator.Core;
 using TRMediator.Core.Abstractions;
 
 namespace TRMediator.Extensions.DependencyInjection
@@ -16,6 +17,8 @@ namespace TRMediator.Extensions.DependencyInjection
             {
                 services.AddScoped(register.InterfaceType, register.ConcreteType);
             }
+
+            services.AddScoped<IMediator, Mediator>();
 
             return services;
         }
